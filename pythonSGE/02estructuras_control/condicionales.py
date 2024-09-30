@@ -1,30 +1,18 @@
-a = 3
-b = 1
+# Estructura if
+edad = int(input("Introduce tu edad: "))
 
-# IF
-if a < b:
-    print("a es menor que b")
-elif a > b:
-    print("a es mayor que b")
+if edad >= 18:
+    print("Eres mayor de edad")
 else:
-    print("deben ser iguales porque no se cumple ninguna condicion...")
+    print("Eres menor de edad")
 
-# CASE
-error = input('Introduzca un código de error:\n')
+# Estructura case (Python usa match-case desde la versión 3.10)
+dia = input("Introduce un día de la semana: ").lower()
 
-match error:
-    case "200":
-        print('Todo ok.')
-    case "301":
-        print('Movimiento permanente de la página.')
-    case "302":
-        print('Movimiento temporal de la página.')
-    case "404":
-        print('Página no encontrada.')
-    case "500":
-        print('Error interno del servidor.')
-    case "503":
-        print('Servicio no disponible.')
+match dia:
+    case "lunes":
+        print("Inicio de la semana")
+    case "viernes":
+        print("Fin de la semana")
     case _:
-        print('Error no disponible.')
-
+        print("Día común")

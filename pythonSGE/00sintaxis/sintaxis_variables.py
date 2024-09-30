@@ -1,13 +1,26 @@
-'''
-2ºDAM
-SGE 24-25
-David Espeso Pastor
-'''
-# Sintaxis y varibales Python
-variable_string = "String" # Cadena
-variable_int = 1           # Entero
-variable_float = 2.2       # Flotante
-variable_boolean = True    # Booleano
+"""
+Ciclo Formativo: Desarrollo de Aplicaciones Multiplataforma
+Módulo: Sistemas de Gestión Empresarial
+Curso: 2024/2025
+Nombre: David Espeso Pastor
+"""
 
-print(variable_string, variable_int, variable_float, variable_boolean)
-print(type(variable_string), type(variable_int), type(variable_float), type(variable_boolean))
+# Sintaxis y variables Python
+
+# Variables con tipos de datos primitivos
+texto = "Hola, mundo"  # Cadena de texto
+entero = 42  # Número entero
+decimal = 3.14  # Número decimal
+booleano = True  # Booleano (Verdadero/Falso)
+
+# Imprimir el contenido de las variables
+print(texto)
+print(entero)
+print(decimal)
+print(booleano)
+
+# Imprimir el tipo de cada variable
+print(type(texto))
+print(type(entero))
+print(type(decimal))
+print(type(booleano))

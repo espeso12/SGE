@@ -1,34 +1,25 @@
+# Utilidad de la línea: Imprime el resultado de una suma
 print(f"Suma: 8 + 14 = {8 + 14}")
-# Escribir por teclado
-input("Escribe: ")
-# Operadores de comparación, lógicos y de asignación
-'''
-Fuente: https://ellibrodepython.com/operadores-python
-Comparación
-==  -> igualdad
-!=  -> diferencia
->   -> superior
-<   -> inferior
->=  -> superior o igualdad
-<=  -> inferior o igualdad
 
-Lógicos
-and -> y
-or  -> o
-not -> no
+# Obtener texto escrito por teclado
+nombre = input("Escribe tu nombre: ")
+print(f"Tu nombre es {nombre}")
 
-Asignación
-=   -> asigna
-+=  
--=  
-*=  
-/=  
-%=  -> módulo de la division y almacena el resultado de la primera
-//= -> cociente entre dos variables y almacena el resultado de la primera
-**= -> exponente del primer número elevado al segundo y almacena el resultado de la primera
-&=  -> compara bit a bit entre dos variables y almacena el resultado de la primera
-|=  -> 
-^=  ->
-»=  ->
-«=  ->
-'''
+# Operadores de comparación
+# ==, !=, >, <, >=, <=
+
+# Operadores lógicos
+# and, or, not
+
+# Operadores de asignación
+# =, +=, -=, *=, /=, %=, **=, //=
+
+# Calculadora
+num1 = float(input("Introduce el primer número: "))
+num2 = float(input("Introduce el segundo número: "))
+
+print(f"Suma: {num1 + num2}")
+print(f"Resta: {num1 - num2}")
+print(f"Multiplicación: {num1 * num2}")
+print(f"División: {num1 / num2}")
+print(f"Resto: {num1 % num2}")

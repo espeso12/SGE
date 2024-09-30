@@ -1,14 +1,17 @@
-lista = [1, 2]
+# Ejemplos de listas
+lista = [3, 1, 4, 1, 5, 9]
 
-# Añadir
-lista.append(3)
+# Inserción
+print("Después de añadir 9:", lista)
 
-# Borrar
-lista.remove(2)
-lista.clear()   # ELimina todos los elementos
+# Borrado
+lista.remove(1)  # Elimina la primera aparición de 1
+print("Después de eliminar 1:", lista)
 
-# Actualizar
+# Actualización
+lista[0] = 10
+print("Después de actualizar el primer elemento:", lista)
 
-
-# Ordenar
+# Ordenación
 lista.sort()
+print("Lista ordenada:", lista)
