@@ -130,5 +130,5 @@ def main():
         else:
             print("Opción no válida. Inténtalo de nuevo.")
 
-if __name__ == "__main__":
-    main()
+
+main()
