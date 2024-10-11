@@ -14,6 +14,7 @@ caso de PokeAPI, los endpoints permiten acceder a información sobre los diferen
 
 import requests
 
+
 # Función para obtener información de un Pokémon por su nombre o número
 def obtener_info_pokemon(pokemon):
     # Asegurarse de que el nombre esté en minúsculas
@@ -38,6 +39,8 @@ def obtener_info_pokemon(pokemon):
         # Mostrar los tipos de Pokémon
         tipos = [tipo['type']['name'] for tipo in data['types']]
         print(f"Tipos: {', '.join(tipos)}")
+        habilidades = [habilidad['abilities']['ability']['name'] for habilidad in data['abilities']]
+        print(f"Habilidades: {', '.join(habilidades)}")
 
     elif response.status_code == 404:
         print(f"El Pokémon '{pokemon}' no fue encontrado. Verifica el nombre o número.")
